@@ -1,0 +1,26 @@
+body {
+  font-family: 'Raleway';
+}
+input[type="radio"]:checked ~ img {
+  outline:2px solid lightblue;
+}
+.overflow-scroll.overflow-y-hidden::-webkit-scrollbar {
+  height:6px;
+}
+
+.overflow-scroll.overflow-y-hidden::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.overflow-scroll.overflow-y-hidden::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.overflow-scroll.overflow-y-hidden::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+.overflow-scroll.overflow-y-hidden::-webkit-scrollbar-thumb:hover {
+  background: #a5a5a5;
+}
+.overflow-scroll.overflow-y-hidden::-webkit-scrollbar-thumb:active {
+  background: #575757;
+}
