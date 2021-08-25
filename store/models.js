@@ -18,7 +18,7 @@ export const state = () => ({
       src:'/kudo_models/5.jpg'
     },
   ],
-  currentModel: null
+  currentModel: 0
 })
 
 export const mutations = {

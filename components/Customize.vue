@@ -1,10 +1,11 @@
 <template>
-  <div>
+  <div class="overflow-hidden">
+    <a href="/"><img class="inline" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39092/preview.png" height="15px" width="15px" alt="">Return</a>
     <div>
       <span class="text-gray-700 text-lg font-bold text-center mb-4 block">Personalize seu kudo card!</span>
       <canvas id="kudo-canvas"></canvas>
       <textarea @change="keyText" @keydown="(e)=> { lastText = e.target.value }" @keyup="keyText" :value="text" name="kudo-text" id="kudo-text" class="no-resize w-0 h-0"></textarea>
-      <img id="canvas-bg" :src="currentModel.src" alt="" srcset="" class="absolute opacity-0 invisible" @load="processCanvas()">
+      <img id="canvas-bg" :src="currentModel.src" alt="" srcset="" class="absolute opacity-0 invisible left-0 top-0" @load="processCanvas()">
     </div>
     <a class="btn-1 cursor-pointer" @click="saveCanvas">
       Próximo
